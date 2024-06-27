@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAD9uZcM3jZkts-9M8h2K8f5PlhriRleRw",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "gymantrum-gym.firebaseapp.com",
   projectId: "gymantrum-gym",
   storageBucket: "gymantrum-gym.appspot.com",

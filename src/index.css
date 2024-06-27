@@ -1,0 +1,1805 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* reset default css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* css for all pages */
+
+.container-hero {
+  max-width: 111.6rem;
+  margin: 0 auto;
+
+}
+
+.container {
+  max-width: 124rem;
+  margin: 0 auto;
+}
+
+.page-padding {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.nav-btn-hover:hover {
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+.hero-section {
+  background-image: url('../src/images/hero/hero-image.jpg');
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-text {
+  top: 55%;
+  right: 12px;
+  transform: translate(-50%, -50%);
+}
+
+.title-white {
+  filter: brightness(0) invert(1);
+}
+
+.hero-cta::after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.362);
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  transition: all 0.4s;
+}
+
+.hero-cta:hover:after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid rgba(255, 255, 255);
+  position: absolute;
+  top: -0px;
+  left: 0px;
+  transition: all 0.4s;
+}
+
+.about-section {
+  background-image: url('../src/images/who-we-are/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-item-div {
+  transition: all 0.2s;
+}
+
+.card-item-div:hover {
+  background-image: url('../src/images/who-we-are/info-card-bg.jpg');
+  color: white;
+}
+
+
+
+.about-cta {
+  padding: 1.82rem 3.6rem;
+  transition: all 0.3s;
+  width: 21rem;
+}
+
+.about-cta::after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid rgba(252, 247, 247, 0.992);
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  transition: all 0.4s;
+}
+
+.about-cta:hover:after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid #FF0336;
+  position: absolute;
+  top: -0px;
+  left: 0px;
+  transition: all 0.4s;
+}
+/* mobile screen button about home page*/
+.about-cta-m {
+  padding: 1.82rem 3.6rem;
+  transition: all 0.3s;
+  width: 21rem;
+}
+
+.about-cta-m::after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid rgba(63, 63, 63, 0.362);
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  transition: all 0.4s;
+}
+
+.about-cta-m:hover:after {
+  content: '';
+  width: 20rem;
+  height: 5.5rem;
+  border: 1px solid #FF0336;
+  position: absolute;
+  top: -0px;
+  left: 0px;
+  transition: all 0.4s;
+}
+
+.girl-running {
+  width: 100%;
+  height: 77rem;
+  top: 45%;
+  right: 66%;
+  transform: translate(50%, -50%);
+  position: absolute;
+  z-index: 5;
+}
+.men-running {
+  width: 100%;
+  height: auto;
+  top: 60%;
+  right: 46%;
+  transform: translate(40%, -50%) ;
+  position: absolute;
+  z-index: 0;
+}
+
+.aboutHome-section {
+  background-image: url('../src/images/AboutPage/about6.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 20rem; /* adjust as needed */
+}
+
+.girl-bg {
+  width: 51%;
+  height: auto;
+  top: 67.7%;
+  right: 33%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+
+.girl-text {
+  width: 17%;
+  height: auto;
+  top: 67.7%;
+  right: 84%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+
+.girl-wind {
+  width: 15%;
+  height: auto;
+  top: 64.7%;
+  right: 29%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+
+/* grid  ------------------------------------- */
+
+/* after pseudo */
+.item-0-div::after,
+.item-1-div::after,
+.item-2-div::after,
+.item-3-div::after,
+.item-4-div::after,
+.item-5-div::after {
+  content: '';
+  height: 69px;
+  width: 140px;
+  background-color: rgba(255, 255, 255, .3);
+  position: absolute;
+  left: -49px;
+  bottom: 50%;
+  border-radius: 0 50px 50px 0;
+  transform: rotate(30deg);
+  transition: all .4s;
+  z-index: 5;
+}
+
+.item-0-div:hover:after,
+.item-1-div:hover:after,
+.item-2-div:hover:after,
+.item-3-div:hover:after,
+.item-4-div:hover:after,
+.item-5-div:hover:after {
+  background-color: rgb(255, 255, 255);
+
+}
+
+/* before pseudo */
+.item-0-div::before,
+.item-1-div::before,
+.item-2-div::before,
+.item-3-div::before,
+.item-4-div::before,
+.item-5-div::before {
+  width: 50%;
+  position: absolute;
+  transition: all .4s;
+  z-index: 6;
+  display: block;
+  transform: scale(.65);
+}
+
+.item-0-div::before {
+  content: url('../src/images/features/gym-bike.png');
+  left: -25px;
+  bottom: 45%;
+}
+
+.item-1-div::before {
+  content: url('../src/images/features/karate.png');
+  left: -1px;
+  bottom: 45%;
+}
+
+.item-2-div::before {
+  content: url('../src/images/features/dumbbell.png');
+  left: -1px;
+  bottom: 45%;
+}
+
+.item-3-div::before {
+  content: url('../src/images/features/yoga.png');
+  left: -1px;
+  bottom: 45%;
+}
+
+.item-4-div::before {
+  content: url('../src/images/features/boxer.png');
+  left: -1px;
+  bottom: 45%;
+}
+
+.item-5-div::before {
+  content: url('../src/images/features/workout.png');
+  left: -25px;
+  bottom: 45%;
+}
+
+.item-0-div:hover:before,
+.item-1-div:hover:before,
+.item-2-div:hover:before,
+.item-3-div:hover:before,
+.item-4-div:hover:before,
+.item-5-div:hover:before {
+  transform: scale(.66);
+}
+
+.item-0-div:hover:before {
+  content: url('../src/images/features/bike-red.png');
+}
+
+.item-1-div:hover:before {
+  content: url('../src/images/features/karate-red.png');
+}
+
+.item-2-div:hover:before {
+  content: url('../src/images/features/dumb-red.png');
+}
+
+.item-3-div:hover:before {
+  content: url('../src/images/features/yoga-red.png');
+}
+
+.item-4-div:hover:before {
+  content: url('../src/images/features/boxer-red.png');
+}
+
+.item-5-div:hover:before {
+  content: url('../src/images/features/workout-red.png');
+}
+
+/* grid items */
+.item-0,
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+  filter: grayscale(100%);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 2px 2px 8px 160px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.item-0:hover,
+.item-1:hover,
+.item-2:hover,
+.item-3:hover,
+.item-4:hover,
+.item-5:hover {
+  filter: grayscale(0%);
+  transform: scale(1.3);
+  box-shadow: inset 2px 2px 8px 160px rgba(0, 0, 0, 0);
+}
+
+
+.item-0-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.item-1-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-column-end: 4;
+  overflow: hidden;
+}
+
+.item-2-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 2;
+  grid-column-end: 5;
+  overflow: hidden;
+}
+
+.item-3-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  overflow: hidden;
+}
+
+.item-4-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.item-5-div {
+  height: 30rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 5;
+  overflow: hidden;
+}
+
+.item-0 {
+  background-image: url('../src/images/features/cycling.jpg');
+  width: 100%;
+  height: 100%;
+}
+
+.item-1 {
+  background-image: url('../src/images/features/karate.jpg');
+  width: 100%;
+  height: 100%;
+
+}
+
+.item-2 {
+  background-image: url('../src/images/features/power.jpg');
+  width: 100%;
+  height: 100%;
+}
+
+.item-3 {
+  background-image: url('../src/images/features/meditation.jpg');
+  width: 100%;
+  height: 100%;
+
+}
+
+.item-4 {
+  background-image: url('../src/images/features/mma.jpg');
+  width: 100%;
+  height: 100%;
+
+}
+
+.item-5 {
+  background-image: url('../src/images/features/workout.jpg');
+  width: 100%;
+  height: 100%;
+}
+
+/* end of grid ^^ */
+
+.featured-cta {
+  background-image: url(../src/images/features/cta-bg.png);
+  width: 100%;
+  height: 21rem;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* choose us */
+
+.choose-section {
+  background-image: url('../src/images/choose-us/choose-bg.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.video-div::before {
+  content: "";
+  height: 461px;
+  width: 10px;
+  background-color: #ff0336;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%)rotate(174deg);
+  transform: translateY(-50%)rotate(174deg);
+  right: 10px;
+}
+
+.video-div::after {
+  content: "";
+  height: 42%;
+  width: 10px;
+  background-color: #ff0336;
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+}
+
+.choose-cta {
+  transition: all 0.4s;
+  margin-top: 4rem;
+}
+
+.choose-cta::after {
+  border: 2px solid rgb(89, 89, 89, 0.5);
+}
+
+.choose-cta:hover:after {
+  border: 2px solid #FF0336;
+}
+
+/* trainers section */
+
+.trainers-section {
+  background-image: url('../src/images/trainers/dot-bg.png');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.trainers-section::after {
+  content: url('../src/images/trainers/bg-attachment.png');
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box-desc::after {
+  content: "";
+  width: 45px;
+  height: 4px;
+  background-color: #ff0336;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all .4s ease-in-out;
+}
+
+.box-desc:hover:after {
+  content: "";
+  width: 100%;
+  height: 4px;
+}
+
+/* gallery grid */
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 6px;
+  height: 100%;
+
+}
+
+#item-0 {
+  height: 41rem;
+  width: 100%;
+  background-color: #DE89DD;
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+
+  background-image: url('../src/images/gallery/img6.jpg');
+  object-fit: cover;
+  background-size: cover;
+  /* background-position: 0 510px; */
+  background-repeat: no-repeat;
+}
+
+#item-1 {
+
+  background-color: #F7D9AB;
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 2;
+  grid-column-end: 5;
+
+  background-image: url('../src/images/gallery/img15.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: 0px -131px;
+  background-repeat: no-repeat;
+}
+
+#item-2 {
+
+  background-color: #BC775E;
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 4;
+  grid-column-end: 5;
+
+  background-image: url('../src/images/gallery/img16.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#item-3 {
+
+  background-color: #A89CE7;
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 2;
+
+  background-image: url('../src/images/gallery/img17.jpg');
+  object-fit: cover;
+  background-size: cover;
+  /* background-position: 0 -13px; */
+  background-repeat: no-repeat;
+
+}
+
+#item-4 {
+
+  background-color: #DC9F7C;
+  grid-row-start: 3;
+  grid-column-start: 2;
+
+  grid-row-end: 4;
+  grid-column-end: 3;
+
+  background-image: url('../src/images/gallery/img12.jpg');
+  object-fit: cover;
+  background-size: cover;
+  /* background-position: 0 -81px; */
+  background-repeat: no-repeat;
+
+}
+
+/* bmi section */
+
+.bmi-section {
+  background-image: url('../src/images/bmi/banner.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+/* price section */
+
+.pricing-section {
+  background-image: url('../src/images/pricing/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pricing-cta {
+  transition: all 0.4s;
+  margin-top: 4rem;
+}
+
+.pricing-cta::after {
+  border: 2px solid #ff03353b;
+
+}
+
+.pricing-cta:hover:after {
+  border: 2px solid #FF0336;
+}
+
+/* blog section */
+.cta-section {
+  background-image: url('../src//images/call/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* cta banner */
+
+.cta-banner-btn {
+  padding: 18px 22px;
+}
+
+/* gallery */
+
+.gallery-cta {
+  display: none;
+}
+
+/* login */
+.login-section {
+  background-image: url('../src/images/who-we-are/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.login-banner {
+  background-image: url('../src/images/login/banner.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 45vh;
+}
+
+/* classes page ----- */
+
+.cycling-bg,
+.meditaion-bg,
+.mma-bg,
+.karate-bg,
+.power-bg,
+.workout-bg,
+.cross-bg,
+.run-bg {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cycling-bg {
+  background-image: url('../src/images/classes/cycling.jpg');
+}
+
+.meditaion-bg {
+  background-image: url('../src/images/classes/meditation.jpg');
+}
+
+.mma-bg {
+  background-image: url('../src/images/classes/mma.jpg');
+}
+
+.karate-bg {
+  background-image: url('../src/images/classes/karate.jpg');
+}
+
+.powerlift-bg {
+  background-image: url('../src/images/classes/powerlifting.jpg');
+}
+
+.workout-bg {
+  background-image: url('../src/images/classes/workout.jpg');
+}
+
+.crossfit-bg {
+  background-image: url('../src/images/classes/cross.jpg');
+}
+
+.running-bg {
+  background-image: url('../src/images/classes/running.jpg');
+}
+
+.box-bg {
+  background-image: url('../src/images/classes/box.jpg');
+}
+
+.bodybuilding-bg {
+  background-image: url('../src/images/classes/bodybuilding.jpg');
+}
+
+.yoga-bg {
+  background-image: url('../src/images/classes/yoga.jpg');
+}
+
+.fitness-bg {
+  background-image: url('../src/images/classes/fitness.jpg');
+}
+
+/* blog page */
+
+.blog-cta {
+  padding: 18px 22px;
+  margin-left: 0;
+}
+
+.blog-banner {
+  background-image: url('../src/images/blogpage/sidebar1.png');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-shape {
+  -webkit-clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+}
+
+/* Exercises */
+.right-arrow,
+.left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF2625;
+  font-size: 25px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -20px;
+  right: 80px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.right-arrow {
+  right: 140px;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-image {
+  width: 729px;
+  height: 742px;
+}
+
+.exercise-card {
+  width: 400px;
+  height: 445px;
+  background: #fff;
+  border-top: 4px solid #FF2625;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card img {
+  height: 326px;
+}
+
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.search-btn:hover {
+  color: #FF2625 !important;
+  border: 1px solid #FF2625 !important;
+}
+
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 387px;
+  height: 381px;
+  text-decoration: none;
+}
+
+/*-----------------------------------*\
+  #Nutrions
+\*-----------------------------------*/
+:root{
+  /**
+   * colors
+   */
+
+   --blue-green-color-wheel_60: hsla(165, 77%, 17%, 0.6);
+   --blue-green-color-wheel_10: hsla(165, 77%, 17%, 0.1);
+   --blue-green-color-wheel: hsl(165, 77%, 17%);
+   --black-chocolate: hsl(32, 24%, 14%);
+   --spanish-gray: hsl(210, 3%, 62%);
+   --orange-web: hsl(38, 100%, 50%);
+   --davys-gray: hsl(213, 5%, 34%);
+   --light-gray: hsl(0, 0%, 80%);
+   --msu-green: hsl(165, 77%, 15%);
+   --cultured: hsl(30, 22%, 96%);
+   --white_15: hsl(0, 0%, 100%, 0.15);
+   --white: hsl(0, 0%, 100%);
+   --onyx: hsl(210, 10%, 23%);
+ 
+   /**
+    * typography
+    */
+ 
+   --ff-montserrat: 'Montserrat', sans-serif;
+   --ff-playfair: 'Playfair Display', serif;
+ 
+  --fs-1: 3.6rem;
+  --fs-2: 2.4rem;
+  --fs-3: 2.2rem;
+  --fs-4: 2rem;
+  --fs-5: 1.5rem;
+  --fs-6: 1.4rem;
+  --fs-7: 1.3rem;
+
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-500: 500;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 60px;
+/**
+   * shadow
+   */
+
+   --shadow-1: 0 2px 30px hsla(0, 0%, 0%, 0.1);
+   --shadow-2: 2px 4px 8px hsla(215, 20%, 16%, 0.15);
+ 
+   /**
+    * border radius
+    */
+ 
+   --radius-2: 2px;
+   --radius-10: 10px;
+   --radius-50: 50px;
+ 
+   /**
+    * transition
+    */
+ 
+   --transition-1: 0.25s ease;
+   --transition-2: 0.5s ease;
+   --transition-3: 1s ease;
+   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+.nu-container { padding-inline: 15px; }
+
+.btn {
+  color: var(--white);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  max-width: max-content;
+  padding: 8px 20px;
+  border-radius: var(--radius-50);
+  transition: var(--transition-1);
+}
+
+.btn-primary,
+.btn-secondary:is(:hover, :focus) { background-color: var(--blue-green-color-wheel); }
+
+.btn-secondary,
+.btn-primary:is(:hover, :focus) { background-color: var(--orange-web); }
+
+.section { padding-block: var(--section-padding); }
+
+.h1,
+.h2,
+.h3 {
+  color: var(--black-chocolate);
+  font-family: var(--ff-playfair);
+  line-height: 1.1;
+}
+
+
+.h2 { font-size: var(--fs-2); }
+
+.h3 { font-size: var(--fs-4); }
+
+[data-section] > * {
+  opacity: 1;
+  transform: translateY(50px);
+  transition: 1s ease;
+}
+
+[data-section].active > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nutri {
+  padding-block: 130px 80px;
+  background-position: 25%;
+}
+
+.nutri-section {
+  background-image: url('../src/images/NutritionPage/hero-banner.jpg');
+  width: 100%;
+  height: 150vh;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.grid-list {
+  display: grid;
+  gap: 50px;
+}
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--light-gray);
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-subtitle {
+  color: var(--color, var(--blue-green-color-wheel));
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-block-end: 15px;
+}
+
+.section-title { text-align: center; }
+
+.section-text { font-size: var(--fs-5); }
+
+.title-wrapper {
+  position: relative;
+  padding-block: 40px;
+  margin-block-end: 50px;
+  z-index: 1;
+}
+
+.title-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 160px;
+  background-image: url('../src/images/NutritionPage/title-shape-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+}
+
+.card-link {
+  color: var(--spanish-gray);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  transition: var(--transition-2);
+}
+
+.card-link .span {
+  display: inline-block;
+  color: var(--hover-color, var(--black-chocolate));
+  transition: var(--transition-2);
+}
+
+.card-meta-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.card-meta-item {
+  position: relative;
+  color: var(--orange-web);
+  font-size: var(--fs-6);
+}
+
+.card-meta-item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -15px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--blue-green-color-wheel);
+  border-radius: 50%;
+}
+
+.nutri-subtitle {
+  color: var(--blue-green-color-wheel);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.nutri-title { margin-block: 16px 30px; }
+
+.nutri-text {
+  color: var(--black-chocolate);
+  font-weight: var(--fw-600);
+}
+
+.nutri .btn { margin-block: 20px; }
+
+.nutri :is(.social-wrapper, .social-list) {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nutri .social-title {
+  color: var(--black-chocolate);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+}
+
+.nutri .social-link {
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid var(--blue-green-color-wheel_10);
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.nutri .social-link:is(:hover, :focus) {
+  background-color: var(--blue-green-color-wheel);
+  border-color: var(--blue-green-color-wheel);
+  color: var(--white);
+}
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+.service-card {
+  padding-inline: 25px;
+  text-align: center;
+}
+
+.service-card .card-icon {
+  position: relative;
+  background-color: var(--cultured);
+  max-width: max-content;
+  margin-inline: auto;
+  padding: 40px;
+  border-radius: 50%;
+  margin-block-end: 40px;
+  overflow: hidden;
+  transition: var(--transition-1);
+  z-index: 1;
+}
+
+.service-card .card-icon::before,
+.service-card .card-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: var(--transition-1);
+  z-index: -1;
+}
+
+.service-card .card-icon::before {
+  background-color: var(--blue-green-color-wheel);
+  transform: translateY(120px);
+}
+
+.service-card .card-icon::after {
+  background-color: var(--orange-web);
+  transform: translateY(150px);
+}
+
+.service-card:is(:hover, :focus-within, .active) .card-icon::before {
+  transform: translateY(0);
+}
+
+.service-card:is(:hover, :focus-within, .active) .card-icon::after {
+  transform: translateY(120px);
+}
+
+.service-card .card-icon img { transition: var(--transition-1); }
+
+.service-card:is(:hover, :focus-within, .active) .card-icon img {
+  filter: grayscale(1) brightness(0) invert(1);
+}
+
+.service-card .h3 { --fs-4: 2.4rem; }
+
+.service-card .card-title { transition: var(--transition-1); }
+
+.service-card .card-title:is(:hover, :focus) { color: var(--orange-web); }
+
+.service-card .card-text {
+  font-size: var(--fs-5);
+  margin-block: 20px 35px;
+}
+
+.service-card .btn {
+  margin-inline: auto;
+  font-size: 18px;
+  padding: 0;
+  max-width: 60px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+}
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
+.nuabout {
+  background-color: var(--cultured);
+  overflow: hidden;
+}
+
+.nuabout-banner {
+  position: relative;
+  margin-block-end: 50px;
+}
+
+.nuabout-banner::before,
+.nuabout-banner::after {
+  content: "";
+  position: absolute;
+}
+
+.nuabout-banner::before {
+  top: -20px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  background-image: url('../src/images/NutritionPage/about-shape-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: rotate360 8s linear infinite;
+}
+
+@keyframes rotate360 {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(1turn); }
+}
+
+.nuabout-banner::after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, transparent 50%, var(--blue-green-color-wheel_60));
+}
+
+.nuabout-banner .btn {
+  position: absolute;
+  min-width: max-content;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.nuabout-content {
+  position: relative;
+  background-color: var(--white);
+  padding: 40px;
+  z-index: 1;
+}
+
+.nuabout-content::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  width: 110px;
+  height: 110px;
+  background-image: url('../src/images/NutritionPage/about-shape-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+}
+
+.nuabout :is(.section-subtitle, .section-title) { text-align: left; }
+
+.nuabout .section-title { margin-block-end: 20px; }
+
+.nuabout-h3 {
+  color: var(--blue-green-color-wheel);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-600);
+  margin-block: 30px 10px;
+}
+/*-----------------------------------*\
+  #COURSE
+\*-----------------------------------*/
+
+.course-card .card-banner { margin-block-end: 30px; }
+
+.course-card .card-content {
+  position: relative;
+  padding: 20px;
+  padding-block-end: 15px;
+}
+
+.course-card .card-price {
+  background-color: var(--blue-green-color-wheel);
+  color: var(--white);
+  font-weight: var(--fw-700);
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+  margin-block-start: -80px;
+  margin-block-end: 20px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
+
+.course-card .card-title {
+  margin-block: 10px 20px;
+  transition: var(--transition-1);
+}
+
+.course-card .card-title:is(:hover, :focus) { color: var(--orange-web); }
+/*-----------------------------------*\
+  #NUTRITION BLOG
+\*-----------------------------------*/
+
+.nublog { background-color: var(--cultured); }
+
+.nublog-card {
+  background-color: var(--white);
+  min-height: 420px;
+  padding: 20px;
+  display: grid;
+  align-content: center;
+  transition: var(--transition-2);
+}
+
+.nublog-card:is(:hover, :focus-within) {
+  --hover-color: var(--white);
+  background-color: var(--blue-green-color-wheel);
+  color: var(--white);
+}
+
+.nublog-card .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.nublog-card .publish-date {
+  background-color: var(--hover-color, var(--blue-green-color-wheel));
+  color: var(--white);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  line-height: 1;
+  text-align: center;
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-content: center;
+  border-radius: var(--radius-2);
+  transition: var(--transition-2);
+}
+
+.nublog-card:is(:hover, :focus-within) .publish-date { color: var(--blue-green-color-wheel); }
+
+.nublog-card .publish-date .span {
+  color: var(--orange-web);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
+  line-height: 1;
+  margin-block-end: 5px;
+}
+
+.nublog-card .card-link {
+  font-weight: var(--fw-700);
+  margin-block-end: 10px;
+}
+
+.nublog-card:is(:hover, :focus-within) .card-link { color: var(--orange-web); }
+
+.nublog-card .card-meta-item:not(:last-child)::after {
+  background-color: var(--hover-color, var(--black-chocolate));
+  transition: var(--transition-2);
+}
+
+.nublog-card .card-title {
+  color: var(--hover-color);
+  margin-block: 30px 15px;
+  transition: var(--transition-2);
+}
+
+.nublog-card .card-text { font-size: var(--fs-5); }
+
+/* MEDIA QUERIES --------------------------------*/
+/**
+ * responsive for larger than 768px screen
+ */
+ @media (min-width: 575px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 5.6rem;
+    --fs-2: 3.6rem;
+
+  }
+   /**
+   * REUSED STYLE
+   */
+  
+
+  .nu-container {
+    max-width: 600px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .btn { padding: 10px 30px; }
+
+  /**
+   * Nutri
+   */
+
+  .nutri { padding-block: 170px 100px; }
+
+  .nutri-text { font-size: 2rem; }
+
+  .nutri .btn { margin-block: 25px 80px; }
+
+  .nutri .social-title { --fs-6: 1.6rem; }
+
+  .nutri .social-link { padding: 15px; }
+  /**
+   * SERVICE
+   */
+
+   .service-card {
+    max-width: 380px;
+    margin-inline: auto;
+  }
+
+  .service-card .card-icon { padding: 50px; }
+
+  .service-card .card-icon img { width: 70px; }
+
+  .service-card .card-icon::before,
+  .service-card:is(:hover, :focus-within, .active) .card-icon::after {
+    transform: translateY(150px);
+  }
+
+  .service-card .card-icon::after { transform: translateY(180px); }
+
+  .service-card .h3 { --fs-4: 3.5rem; }
+
+  /**
+   *nutrition ABOUT
+   */
+
+   .nuabout-banner::before {
+    top: -60px;
+    left: -60px;
+    width: 155px;
+    height: 155px;
+  }
+
+  .nuabout-content::after {
+    top: -30px;
+    right: -50px;
+    width: 195px;
+    height: 195px;
+  }
+
+  .nuabout .section-title { --fs-2: 4.4rem; }
+
+  .nuabout-h3 { --fs-2: 3rem; }
+  /**
+   * COURSE
+   */
+
+   .course .grid-list { grid-template-columns: 1fr 1fr; }
+   /**
+   *NUTRITION BLOG
+   */
+
+   .nublog-card .h3 { --fs-4: 2.4rem; }
+}
+
+ @media (min-width: 768px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 6.4rem;
+    --fs-2: 5.7rem;
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 80px;
+
+  }
+   /**
+   * REUSED STYLE
+   */
+
+  .nu-container { max-width: 720px; }
+   /**
+   * HERO
+   */
+
+  .nutri-title { max-width: 15ch; }
+  /**
+   * SERVICE
+   */
+
+   .service .grid-list { grid-template-columns: 1fr 1fr; }
+
+   /**
+   * ABOUT
+   */
+
+  .nuabout-content { padding: 100px 80px; }
+
+  .nuabout .section-title { --fs-2: 5.7rem; }
+/**
+   * COURSE
+   */
+
+   .course-card .card-price {
+    width: 80px;
+    height: 80px;
+    font-size: var(--fs-4);
+    margin-block-start: -100px;
+  }
+
+  .course-card .h3 { --fs-4: 2.4rem; }
+
+  .course-card .card-content {
+    padding: 30px;
+    padding-block-end: 25px;
+  }
+  /**
+   * BLOG
+   */
+
+   .nublog-card { padding: 45px; }
+
+}
+
+@media (min-width: 992px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 100px;
+
+  }
+  /**
+   * REUSED STYLE
+   */
+
+  .nu-container { max-width: 960px; }
+
+  .btn {
+    font-size: unset;
+    padding: 13px 40px;
+  }
+
+  :is(.service, .course, .blog) .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /**
+   * SERVICE
+   */
+
+   .service .grid-list { gap: 0; }
+
+   .service .grid-list > li:nth-child(2) { border-inline: 1px solid var(--cultured); }
+ 
+   .service-card .h3 { --fs-4: 3rem; }
+
+   /**
+   * ABOUT
+   */
+
+  .nuabout .nu-container {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .nuabout-banner { margin-block-end: 0; }
+
+  .nuabout-content { padding: 40px; }
+
+  .nuabout .section-title { --fs-2: 4.4rem; }
+
+  .nuabout-h3 { --fs-2: 2.4rem; }
+  /**
+   * BLOG
+   */
+
+   .nublog-card { padding: 30px; }
+}
+
+@media (max-width: 1200px) {
+  .navlist-nav {
+    display: none;
+  }
+
+  .fa-bars {
+    display: flex;
+  }
+  /**
+   * CUSTOM PROPERTY
+   */
+
+   :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 8rem;
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 140px;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .nu-container { max-width: 1200px; }
+   /**
+   * HERO
+   */
+
+  .nutri {
+    padding-block: 200px 100px;
+    background-position: 35%;
+  }
+
+  /**
+   * SERVICE
+   */
+
+   .service-card .h3 { --fs-4: 3.5rem; }
+
+   .service-card .btn { opacity: 1; }
+ 
+   .service-card:is(:hover, :focus-within, .active) .btn { opacity: 1; }
+
+   /**
+   * ABOUT
+   */
+
+  .nuabout-content { padding: 100px 80px; }
+
+  .nuabout .section-title { --fs-2: 5.7rem; }
+
+  .nuabout-h3 { --fs-2: 3rem; }
+
+  /**
+   * BLOG
+   */
+
+   .nublog-card { padding: 45px; }
+
+   .nublog-card .publish-date {
+     width: 80px;
+     height: 80px;
+   }
+}
+
+@media screen and (max-width:1200px) {
+  .detail-image {
+    width: 500px;
+    height: 500px;
+  }
+
+
+  .react-horizontal-scrolling-menu--scroll-container {
+    width: 500px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: static !important;
+  }
+
+  .hero-banner-img {
+    display: none;
+  }
+
+  .exercise-card {
+    width: 320px;
+  }
+
+  .exercise-video {
+    width: 320px;
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  .exercise-card {
+    width: 280px;
+  }
+}
+
+/* scrollbar ------------------------- */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #A0A0A0 #FFFFFF;
+  scroll-behavior: smooth;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 80px;
+  background-color: #FF0336;
+  border: 1.5px solid #fff;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #A0A0A0;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #A0A0A0;
+}

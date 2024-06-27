@@ -44,9 +44,9 @@
 </div>
 <br>
 <br>
-<h3 align='center'>Contact Page 👇</h3>
+<h3 align='center'>Gym Gear Page 👇</h3>
 
-<div align='Gym Gear Page'>
+<div align='center'>
 <img src='./Screenshots/GymGears.png'/>
 </div>
 <br>

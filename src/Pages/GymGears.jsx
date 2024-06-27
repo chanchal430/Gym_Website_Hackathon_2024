@@ -48,7 +48,7 @@ const GymGears = () => {
             <img
               src={TitleRed}
               alt="text_bg"
-              className="w-[34rem] absolute top-0 min450:w-[25rem] min375:top-[58px] md:right-[41rem]"
+              className="w-[34rem] absolute top-0 min450:w-[25rem] min375:top-0 md:right-[41rem]"
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
@@ -102,7 +102,7 @@ const GymGears = () => {
             <img
               src={TitleRed}
               alt="text_bg"
-              className="w-[34rem] absolute top-0 min450:w-[25rem] min375:top-[58px] md:right-[41rem]"
+              className="w-[34rem] absolute top-0 min450:w-[25rem] min375:top-0 md:right-[41rem]"
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
@@ -157,7 +157,7 @@ const GymGears = () => {
             <img
               src={TitleRed}
               alt="text_bg"
-              className="w-[28rem] absolute top-0 min450:w-[18rem] min375:top-[58px] md:right-[45rem]"
+              className="w-[28rem] absolute top-0 min450:w-[18rem] min375:top-0 md:right-[45rem]"
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-5">

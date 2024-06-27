@@ -142,7 +142,7 @@ const MouseImageTrail = ({
   return (
     <div
       ref={scope}
-      className="relative overflow-hidden"
+      className="relative overflow-hidden min450:hidden"
       onMouseMove={handleMouseMove}
       onTouchMove={(e) => handleTouchMove(e)}
     >

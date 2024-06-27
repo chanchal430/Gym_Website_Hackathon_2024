@@ -61,15 +61,18 @@ const ExerciseDetail = () => {
 
   return (
     <>
-    <section className="">
+    <section id="exerciseDetails" className="w-full h-screen">
       <div className="login-banner relative justify-center flex">
         <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
           Exercises
         </h1>
       </div>
+      <div className="overflow-hidden">
       <Box sx={{ mt: { lg: "96px", xs: "60px" } }}
       >
+        <div className="mt-2 mb-52">
         <Detail exerciseDetail={exerciseDetail} />
+        </div>
         <ExerciseVideos
           exerciseVideos={exerciseVideos}
           name={exerciseDetail.name}
@@ -79,9 +82,10 @@ const ExerciseDetail = () => {
           equipmentExercises={equipmentExercises}
         />
       </Box>
-      
+      </div>
+      <Footer />
     </section>
-    <Footer />
+    
     </>
   );
 };

@@ -4,7 +4,6 @@ import { Typography, Stack, Button } from "@mui/material";
 import BodyPartImage from "../../images/icons/body-part.png";
 import TargetImage from "../../images/icons/target.png";
 import EquipmentImage from "../../images/icons/equipment.png";
-import Footer from "../Footer/Footer";
 
 const Detail = ({ exerciseDetail }) => {
   const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
@@ -27,7 +26,7 @@ const Detail = ({ exerciseDetail }) => {
   return (
     <>
   <section
-    id="exerciseDetails"
+    id="details"
     className="w-full h-screen min800:flex min800:justify-center min800:text-center items-center justify-center"
   >
     <Stack

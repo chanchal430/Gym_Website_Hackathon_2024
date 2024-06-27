@@ -1610,7 +1610,7 @@ body {
   /**
    * REUSED STYLE
    */
-
+ 
   .nu-container { max-width: 960px; }
 
   .btn {
@@ -1642,7 +1642,7 @@ body {
     align-items: center;
     gap: 50px;
   }
-
+   
   .nuabout-banner { margin-block-end: 0; }
 
   .nuabout-content { padding: 40px; }

@@ -80,7 +80,7 @@ function Navbar() {
             <p className="text-[10px] lg:text-[16px] text-white">STRONGER EVERY DAY</p>
           </div>
         </Link>
-        <div className="navlist-nav">
+        <div className="navlist-nav hidden">
           <NavList />
         </div>
         <div className="flex items-center gap-10">
@@ -302,7 +302,7 @@ function Navbar() {
             {/* hamburger */}
             <i
               onClick={hamburgerMenu}
-              className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"
+              className="fa-bars fa-solid text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"
             ></i>
             {/* account */}
             <Link onClick={goTop} to="/signup" title="signup_button">

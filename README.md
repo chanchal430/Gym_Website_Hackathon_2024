@@ -31,7 +31,7 @@ The main objective of the project is to create a website using ReactJs technolog
 * **Firebase Authentication**
 
 ## Demo ##
-👉Here is a working Live Demo: <a href='https://vercel.com/icy-stackeds-projects/gym-website-hackathon-2024'>Gymate Demo</a>
+👉Here is a working Live Demo: <a href='https://gym-website-hackathon-2024.vercel.app/'>Gymate Demo</a>
 
 ### 🚀 How to run the project : ###
 1. Open the Terminal.
